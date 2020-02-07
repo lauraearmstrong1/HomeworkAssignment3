@@ -17,24 +17,47 @@ var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P'
 var randomNumber = ['0','1','2','3','4','5','6','7','8','9'];
 var symbol = ['~','!','@','#','$','%','^','&','*','(',')','-'];
 
-for (var i = 0; i < lowerCase.length; i++) {
-  console.log(lowerCase[i]);
+var password = prompt("How long would you like your password? Please enter a number 8 -128.")
+
+//BELOW: OR would it be 'for' --> 'alert' --> 'if' ??
+var lowerCase = alert("Would you like your password to contain lower case letters? Click 'OK' for yes or 'Cancel' for no.");
+
+if(lowerCase === true) {
+  for (var i = 0; i < lowerCase.length; i++) {
+    
+    console.log(lowerCase[i]);
+  }
 }
 
+var upperCase = alert("Would you like your password to contain upper case letters? Click 'OK' for yes or 'Cancel' for no.")
+
+if(upperCase === true) {
 // For Loop for upperCase
 for (var j = 0; j < upperCase.length; j++) {
   console.log(upperCase[j]);
+  }
 }
 
+
+var randomNumber = alert("Would you like your password to contain numbers? Click 'OK' for yes or 'Cancel' for no.")
+
+if(randomNumber ==== true) {
 // For Loop for randomNumber
 for (var k = 0; k < randomNumber.length; k++) {
   console.log(randomNumber[k]);
+  }
 }
 
+var symbol = alert("Would you like your password to contain numbers? Click 'OK' for yes or 'Cancel' for no.")
+
+if(symbol === true) {
 // For Loop for symbol
 for (var l = 0; l < symbol.length; l++) {
   console.log(symbol[l]);
+  }
 }
+
+
 
 
 

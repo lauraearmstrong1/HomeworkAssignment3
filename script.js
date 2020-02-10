@@ -7,11 +7,10 @@ var numbers = ['0','1','2','3','4','5','6','7','8','9'];
 var symbol = ['~','!','@','#','$','%','^','&','*','(',')','-'];
 
 
-// Write password to the #password input
+
 function writePassword(password) {    //function that writes the password to the DOM
   
   var passwordText = document.querySelector("#password");   //grabs the area with the ID of #password
-
   passwordText.value = password;  //writes the password to the DOM
 }
 function generatePassword(length, arrChar) {  //taking the array of characters that they have selected and the length and generating the password from what they have selected
@@ -29,42 +28,38 @@ function generatePassword(length, arrChar) {  //taking the array of characters t
 
 function characters(length) {
   var arrChar =[]
+  
   //lower case letters
-
   if(confirm("Would you like your password to contain lower case letters? Click 'OK' for yes or 'Cancel' for no.")) {
       arrChar.push(lowerCase);
   };
-   //upper case letters
-  
+   
+  //upper case letters
   if(confirm("Would you like your password to contain upper case letters? Click 'OK' for yes or 'Cancel' for no.")) {
-  // For Loop for upperCase
     arrChar.push(upperCase)
   }
   
   //numbers
-
-  
   if(confirm("Would you like your password to contain numbers? Click 'OK' for yes or 'Cancel' for no.")) {
-  // For Loop for randomNumber
     arrChar.push(numbers)
   }
   
   //symbols
-
-  
-  if(confirm("Would you like your password to contain numbers? Click 'OK' for yes or 'Cancel' for no.")) {
-  // For Loop for symbol
+  if(confirm("Would you like your password to contain symbols? Click 'OK' for yes or 'Cancel' for no.")) {
     arrChar.push(symbol)
   }
+
+  //length of the password
   if(arrChar.length){
     generatePassword(length, arrChar)
   }
   else{
-    alert("You must select at least one character type")
+    alert("You must select at least one character type.")
     characters(length)
   }
 }
 
+//prompts user for number of characters
 function start() {
 
   var pwLength = prompt("How long would you like your password? Please enter a number 8 - 128.");
@@ -75,12 +70,6 @@ function start() {
     characters(pwLength)
   }
 }
-//length of password
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", start);
-
-
-

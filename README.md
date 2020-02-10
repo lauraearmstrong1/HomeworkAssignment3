@@ -1,20 +1,8 @@
 # HomeworkAssignment3
 
-//From HW Assignment:
+# About the website:
 
-# 03 JavaScript: Password Generator
-
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
-
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
-
-## User Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+This website provides the user the opportunity to generate a random password. The user can click the "generate password" button which will prompt them to choose how long the password should be (8-128 characters), as well as if it should include upper and lower case letters, numbers, and/or symbols. Once the user picks their preferences, a random password is generated and placed in the text box.  
 
 ## Acceptance Criteria
 
@@ -36,9 +24,8 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-The following image demonstrates the application functionality:
+# Personal Reflection
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
 
 ## Review
 
